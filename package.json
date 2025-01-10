@@ -1,6 +1,6 @@
 {
   "name": "@icebreakers/vue-loading-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Vue.js component for full screen loading indicator.",
   "main": "./dist/index.umd.cjs",
@@ -43,8 +43,8 @@
     "start": "npm run dev",
     "dev": "webpack serve --node-env=development  --progress --hot --config=webpack.config.dev.js",
     "docs": "webpack --node-env=production  --config=webpack.config.dev.js --progress --mode=production",
-    "build": "webpack --node-env=production  --progress --mode=production",
-    "vite:build": "vite build",
+    "webpack:build": "webpack --node-env=production  --progress --mode=production",
+    "build": "vite build",
     "_prepublishOnly": "npm run test && npm run build"
   },
   "devDependencies": {
