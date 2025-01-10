@@ -42,10 +42,10 @@ declare module 'vue' {
 }
 
 declare const LoadingPlugin: (app: App, props?: Props, slots?: Slots) => void
-declare const Component: DefineComponent<Props, {}, {}, {}, {}, {}, {}, { 'hide': () => void, 'update:active': (value: boolean) => void }>
+declare const Loading: DefineComponent<Props, {}, {}, {}, {}, {}, {}, { 'hide': () => void, 'update:active': (value: boolean) => void }>
 
 declare function useLoading(globalProps?: Props, globalSlots?: Slots): PluginApi
 
-export {LoadingPlugin, Component, useLoading};
+export {LoadingPlugin, Loading, useLoading};
 
-export default Component
+
