@@ -5,7 +5,9 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const {VueLoaderPlugin} = require('vue-loader');
-
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
   context: __dirname,
   resolve: {

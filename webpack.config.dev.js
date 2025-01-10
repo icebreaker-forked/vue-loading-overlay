@@ -8,7 +8,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
-
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
   mode: 'development',
   context: __dirname,

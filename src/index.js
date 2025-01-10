@@ -1,5 +1,5 @@
-import {useLoading} from './js/api';
-import Component from './js/Component.vue';
+import { useLoading } from './js/api';
+import Loading from './js/Component.vue';
 import './css/index.css';
 
 const LoadingPlugin = (app, props = {}, slots = {}) => {
@@ -8,6 +8,5 @@ const LoadingPlugin = (app, props = {}, slots = {}) => {
   app.provide('$loading', instance)
 };
 
-export default Component;
-export {useLoading, LoadingPlugin, Component}
+export { useLoading, LoadingPlugin, Loading }
 
