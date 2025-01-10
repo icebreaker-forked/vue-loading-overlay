@@ -45,7 +45,7 @@
     "docs": "webpack --node-env=production  --config=webpack.config.dev.js --progress --mode=production",
     "build": "webpack --node-env=production  --progress --mode=production",
     "vite:build": "vite build",
-    "prepublishOnly": "npm run test && npm run build"
+    "_prepublishOnly": "npm run test && npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
